@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+    - name: ETL_EBANTABE_1988
+      database: EVALUATION
+      tables:
+        - name: ACCOUNTS_RECEIVABLE
