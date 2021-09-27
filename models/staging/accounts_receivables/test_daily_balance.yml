@@ -1,0 +1,15 @@
+version: 2
+
+models:
+    - name: stage_working_capital
+      description: making sure the daily balance does not contain null values
+      columns:
+        - name: daily_balance
+          tests:
+            - not_null
+      columns:
+        - name: account
+          description: verifying if new accounts are added
+          tests:
+            - accepted_values:
+                values: ['Account1', 'Account2', 'Account3', 'Account4']
